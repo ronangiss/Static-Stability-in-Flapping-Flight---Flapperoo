@@ -1058,10 +1058,10 @@ methods (Access = private)
                     % amplitude_list = 40*(pi/180);
                 end
                 % higher resolution wingbeat frequency
-                % wing_freqs_fine = [0:0.005:0.02 linspace(0.1, max(wing_freqs), 15) linspace(max(wing_freqs) + 0.1, 15, 15)];
+                wing_freqs_fine = [0:0.005:0.02 linspace(0.1, max(wing_freqs), 15)];
                 % wing_freqs_fine = wing_freqs;
                 % wing_freqs_fine = [0.6390, 0.7378, 6.3898, 4.0581];
-                wing_freqs_fine = [0.6390, 4.0581];
+                % wing_freqs_fine = [0.6390, 4.0581];
 
                 mod_slopes = zeros(length(amplitude_list), length(wing_freqs_fine));
                 mod_err_slopes = zeros(length(amplitude_list), length(wing_freqs_fine));

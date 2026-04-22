@@ -25,9 +25,17 @@ needing to continuously reprocess data on the fly.
 Calibration files for our ATI load cell and a ForceTransducer class used to
 simplify collecting measurements from the load cell via a NI DAQ.
 
+--- kinematics ---
+.csv files containing the kinematics of the wing motion of the flapping robot
+when driving the motor at 1 Hz as calculated in CAD.
+
 --- MPS ---
 MATLAB Codes for commanding the motion of the Model Positioning System (MPS) used to
 adjust the pitch angle of the test model.
+
+--- plot data ---
+Ready-to-plot data (not raw data) that is accessed by plotting GUIs in "Data Analysis
+UI" to produce final plots for data analysis.
 
 --- VFD ---
 MATLAB Codes used to control the Variable Frequency Drive (VFD) that drives the wind

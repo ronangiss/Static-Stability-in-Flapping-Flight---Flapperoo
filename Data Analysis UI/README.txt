@@ -14,6 +14,9 @@ File Structure
 
 main.m -> The file to run.
 
+pitch_stiffness_GUI -> Shows the GUI settings required to plot the pitch
+stiffness data and model estimate
+
 compareAoAUI.m -> Used to create plots of average forces/moments vs angle of
 attack (AoA)
 

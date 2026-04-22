@@ -12,20 +12,16 @@ clear
 % close all force
 
 % Local data path on Ronan's PC
-data_path = "F:\Final Force Data";
+data_path = "../";
+monitor_num = 2;
 
 % Sets up UI for comparing data over angles of attack
-% monitor_num = 1;
 % a = compareAoAUI(monitor_num, data_path);
 % a.dynamic_plotting();
 
 % Sets up UI for comparing stability slope
-% monitor_num = 2;
-% data_path = "F:\Final Force Data";
-% c = compareStabilityUI(monitor_num, data_path);
-% c.dynamic_plotting();
-% 
-monitor_num = 1;
-data_path = "F:\Final Force Data/";
-d = compareKinematicsUI(monitor_num, data_path);
-d.dynamic_plotting();
+c = compareStabilityUI(monitor_num, data_path);
+c.dynamic_plotting();
+
+% d = compareKinematicsUI(monitor_num, data_path);
+% d.dynamic_plotting();
