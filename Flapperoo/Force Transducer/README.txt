@@ -12,8 +12,7 @@ NI USB-6341 DAQ. The file to run here is force_transducer_test.m.
 -------------------------------------------------------------------------------
 Experimental Setup
 -------------------------------------------------------------------------------
-To use the force transducer you will need the following pieces of hardware
-(Look at the image -> experimental_setup.jpg):
+To use the force transducer you will need the following pieces of hardware:
 - force transducer
 - power supply for the force transducer (and its power cord)
 - cable to connect force transducer to power supply
@@ -56,13 +55,6 @@ data >
 		folder to store taring data created by force_transducer_test.m
 	plots
 		folder to store plots created by force_transducer_test.m
-
-force_transducer_test_data.pdf
-	Some example data from a trial run in November 2022. Different brass pieces
-	of known mass were placed on the force transducer.
-
-experimental_setup.jpg
-	Picture of the complete setup required to test the force transducer
 
 force_transducer_test.m
 	Code to run a single force transducer test. Data from the test is saved to the

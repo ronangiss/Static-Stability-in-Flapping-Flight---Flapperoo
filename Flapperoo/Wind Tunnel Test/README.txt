@@ -12,10 +12,33 @@ of the robot. To run the experiment simply activate the wind tunnel GUI and then
 run the main.m file.
 
 -------------------------------------------------------------------------------
+File Structure
+-------------------------------------------------------------------------------
+
+main.m -> File to run wind tunnel experiment from.
+
+--- data ---
+folder where data produced during experiment is deposited. This includes
+force and moment time series data captured during the experiment ("experiment
+data"), mean values for forces and moments collected before the experiment to
+tare the experiment reading ("offsets data"), wind tunnel sensor data for each
+trial -- importantly the pitot tube speed reading and test section temperature
+from which the air density and viscosity of air is estimated ("wind tunnel
+data"), and plots of raw data made while the experiment was running ("plots").
+
+--- galil scripts ---
+folder where galil digital motion controller scripts are stored that are run
+during the experiment to control the motion of the stepper motor that is driving
+the flapping motion. This .dmc files are uploaded to the controller through
+Matlab via the ethernet connection between the PC and the controller.
+
+--- matlab scripts ---
+folder for matlab functions that are called while the experiment is running
+
+-------------------------------------------------------------------------------
 Experimental Setup
 -------------------------------------------------------------------------------
-To use the force transducer you will need the following pieces of hardware
-(Look at the image -> experimental_setup.jpg):
+To use the force transducer you will need the following pieces of hardware:
 - force transducer
 - amplifier box for the force transducer (and its power cord)
 - cable to connect force transducer to amplifier
@@ -47,18 +70,11 @@ Procedure
 -------------------------------------------------------------------------------
 
 - Mount robot and force transducer on MPS arms
-- Tuck carboard pieces into gap between MPS arms and wind tunnel floor
+- Tuck shims into gap between MPS arms and wind tunnel floor
 - Plug in force transducer to powered amplifier box
 - Let sit in wind tunnel at desired wind speed at least until wind tunnel
   temperature equilibrates, ideally for several hours
 - Connect Galil ethernet cable to PC and DAQ usb cable to PC
-- Open Kollmorgen Workbench on wind tunnel computer and enable the pitching motor
 - Turn on the wind tunnel and the chiller
 - Open the wind tunnel GUI and confirm that live data is being plotted
 - Open main.m, change parameters for specific trial, hit run
-
--------------------------------------------------------------------------------
-File Structure
--------------------------------------------------------------------------------
-
-NEEDS TO BE UPDATED...
